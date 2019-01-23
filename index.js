@@ -46,14 +46,23 @@ const template = ({ title, url }) => `
 </html>
 `;
 
+// TODO: add more or organize better, but at least we're using permalinks!
 const games = {
   1: {
-    title: 'NY Mets vs Montreal Expos, April 20 1969',
-    url: 'https://ia801604.us.archive.org/7/items/classicmlbbaseballradio/1969%2004%2030%20New%20York%20Mets%20vs%20Montreal%20Expos%20Complete%20Baseball%20Broadcast.mp3'
+    title: 'Mets @ Expos, April 20 1969',
+    url: 'https://archive.org/download/classicmlbbaseballradio/1969%2004%2030%20Mets%20at%20Expos%20Tom%20Seaver%20Expos%20Broadcast%20Radio.mp3'
   },
   2: {
-    title: 'NY Mets @ Philadelphia Phillies, June 6th, 1962',
-    url: 'https://ia601604.us.archive.org/7/items/classicmlbbaseballradio/196206-06MetsAtPhilliesGame1.mp3'
+    title: 'Dodgers vs Astros, September 30 1969',
+    url: 'https://archive.org/download/classicmlbbaseballradio/1969%2009%2030%20Dodgers%20vs%20Astros%20Vin%20Scully%20Complete%20Radio%20Broadcast.mp3'
+  },
+  3: {
+    title: 'Pirates @ Expos, July 17 1969',
+    url: 'https://archive.org/download/classicmlbbaseballradio/19690717PiratesAtExposDaveVanHorne.mp3'
+  },
+  4: {
+    title: 'Mets vs Cardinals, September 23 1973',
+    url: 'https://archive.org/download/classicmlbbaseballradio/1973%2009%2023%20Mets%20vs%20St%20Louis%20Cardinals%20Pennant%20Chase%20Continues%20Complete%20Radio%20Broadcast.mp3'
   }
 };
 
