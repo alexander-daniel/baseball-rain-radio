@@ -1,50 +1,6 @@
-const template = ({ title, url }) => `
-<!doctype html>
-
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>baseball rain porch</title>
-  <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
-  <meta name="description" content="baseball radio audio porch">
-  <meta name="author" content="cedar">
-  <style>
-    * {
-      font-family: sans-serif;
-      font-weight: 100;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="content">
-      <h2>${title}</h2>
-      <audio
-        src="${url}"
-        controls
-        style="width:400px"
-      >
-        Your browser does not support the <code>audio</code> element.
-      </audio>
-
-      <br>
-
-      <h2>Thunderstorm</h2>
-      <audio
-        src="https://ia800308.us.archive.org/12/items/thunderstorm_ms_relax_water/thunderstorm.mp3"
-        controls
-        loop
-        style="width:400px"
-      >
-        Your browser does not support the <code>audio</code> element.
-      </audio>
-      <br>
-
-      <h6>Thank you to <a href="https://archive.org" target="_blank">archive.org</a> for the CC audio.</h6>
-  </div>
-</body>
-</html>
-`;
+const fs = require('fs');
+const formatter = require('string-template');
+const rawTemplate = fs.readFileSync(`${__dirname}/index.html`, 'utf8');
 
 // TODO: add more or organize better, but at least we're using permalinks!
 // https://archive.org/download/classicmlbbaseballradio
@@ -69,7 +25,11 @@ const games = {
 
 module.exports = (_, res) => {
   const randomID = Math.floor(Math.random() * Object.keys(games).length) + 1;
-  const game = games[randomID];
-  const html = template(game);
+  const { title, url } = games[randomID];
+  const html = formatter(rawTemplate, {
+    title,
+    url
+  });
+
   res.end(html);
 };

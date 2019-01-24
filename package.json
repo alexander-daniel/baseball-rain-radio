@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "micro": "^9.3.3"
+    "micro": "^9.3.3",
+    "string-template": "^1.0.0"
   }
 }
