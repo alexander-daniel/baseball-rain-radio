@@ -7,12 +7,33 @@
   <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
   <meta name="description" content="baseball radio audio porch">
   <meta name="author" content="cedar">
-  <style>* { font-family: sans-serif; font-weight: 100; }</style>
+  <style>
+    * {
+      font-family: sans-serif;
+      font-weight: 100;
+    }
+
+    body, html {
+      background: #f3f3f3;
+      height: 100%;
+      margin: 0;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body>
   <div class="content">
-      <h2>{title}</h2>
+      <h1>⚾️ 📻 🌧</h1>
+      <h3>{title}</h3>
       <audio
         src={url}
         controls
@@ -24,7 +45,7 @@
 
       <br>
 
-      <h2>Thunderstorm</h2>
+      <h3>Thunderstorm</h3>
       <audio
         src="https://ia800308.us.archive.org/12/items/thunderstorm_ms_relax_water/thunderstorm.mp3"
         controls
