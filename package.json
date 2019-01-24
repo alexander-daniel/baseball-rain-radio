@@ -2,5 +2,17 @@
   "dependencies": {
     "micro": "^9.3.3",
     "string-template": "^1.0.0"
-  }
+  },
+  "devDependencies": {
+    "micro-dev": "^3.0.0"
+  },
+  "scripts": {
+    "start-dev": "micro-dev"
+  },
+  "name": "baseball-porch",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@git.sr.ht:~alexanderdaniel/baseball-rain-radio",
+  "author": "alex@cedarcedar.com",
+  "license": "MIT"
 }
