@@ -10,12 +10,28 @@
   <meta name="author" content="cedar">
   <style>
     * {
-      font-family: sans-serif;
+      font-family: monospace;
       font-weight: 100;
     }
 
     body, html {
-      background: #f3f3f3;
+      background: #fff;
+    }
+
+    audio {
+      margin-bottom: 13px;
+    }
+
+    .content {
+      max-width: 640px;
+    }
+
+    .heading, .audio-wrapper {
+      border-bottom: 1px solid black;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-weight: 600;
     }
 
   </style>
@@ -23,30 +39,40 @@
 
 <body>
   <div class="content">
-      <h1>⚾️ 📻 🌧</h1>
-      <h3>{title}</h3>
-      <audio
-        src={url}
-        controls
-        preload="metadata"
-        style="width:400px"
-      >
-        Your browser does not support the <code>audio</code> element.
-      </audio>
+      <div class="heading">
+        <h1>⚾️ 📻 🌧</h1>
+        <p>
+          You're sitting on your porch, looking out while the thunderstorm rages. <br>
+          The AM radio in the kitchen is playing the baseball game. <br>
+          Life is good.
+        </p>
+      </div>
 
-      <h3>Thunderstorm</h3>
-      <audio
-        src="https://ia800308.us.archive.org/12/items/thunderstorm_ms_relax_water/thunderstorm.mp3"
-        controls
-        preload="metadata"
-        loop
-        style="width:400px"
-      >
-        Your browser does not support the <code>audio</code> element.
-      </audio>
+      <div class="audio-wrapper">
+        <h3>{title}</h3>
+        <audio
+          src={url}
+          controls
+          preload="metadata"
+          style="width:400px"
+        >
+          Your browser does not support the <code>audio</code> element.
+        </audio>
 
-      <h6 style="margin-bottom:0">Thank you to <a href="https://archive.org" target="_blank">archive.org</a> for the CC audio.</h6>
-      <h6 style="margin:0"><a href="https://git.sr.ht/~alexanderdaniel/baseball-rain-radio" target="_blank">git src</a></h6>
+        <h3>Thunderstorm</h3>
+        <audio
+          src="https://ia800308.us.archive.org/12/items/thunderstorm_ms_relax_water/thunderstorm.mp3"
+          controls
+          preload="metadata"
+          loop
+          style="width:400px"
+        >
+          Your browser does not support the <code>audio</code> element.
+        </audio>
+      </div>
+
+      <p style="margin-bottom:0">Thank you to <a href="https://archive.org" target="_blank">archive.org</a> for the CC audio.</p>
+      <p style="margin:0"><a href="https://git.sr.ht/~alexanderdaniel/baseball-rain-radio" target="_blank">git src</a></p>
   </div>
 </body>
 </html>

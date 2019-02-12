@@ -5,5 +5,8 @@
     { "src": "index.js", "use": "@now/node" },
     { "src": "favicon.ico", "use": "@now/static" }
   ],
-  "alias": "baseball-porch.now.sh"
+  "alias": [
+    "baseball-porch.now.sh",
+    "am.cedarcedar.com"
+  ]
 }
