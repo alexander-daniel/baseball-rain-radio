@@ -8,33 +8,7 @@
   <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
   <meta name="description" content="baseball radio audio porch">
   <meta name="author" content="cedar">
-  <style>
-    * {
-      font-family: monospace;
-      font-weight: 100;
-    }
-
-    body, html {
-      background: #fff;
-    }
-
-    audio {
-      margin-bottom: 13px;
-    }
-
-    .content {
-      max-width: 640px;
-    }
-
-    .heading, .audio-wrapper {
-      border-bottom: 1px solid black;
-    }
-
-    h1, h2, h3, h4, h5 {
-      font-weight: 600;
-    }
-
-  </style>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
@@ -54,7 +28,7 @@
           src={url}
           controls
           preload="metadata"
-          style="width:400px"
+          style="width:100%;"
         >
           Your browser does not support the <code>audio</code> element.
         </audio>
@@ -64,8 +38,8 @@
           src="https://ia800308.us.archive.org/12/items/thunderstorm_ms_relax_water/thunderstorm.mp3"
           controls
           preload="metadata"
+          style="width:100%;"
           loop
-          style="width:400px"
         >
           Your browser does not support the <code>audio</code> element.
         </audio>

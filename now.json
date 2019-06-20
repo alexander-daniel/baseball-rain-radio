@@ -3,7 +3,7 @@
   "name": "baseball-porch",
   "builds": [
     { "src": "index.js", "use": "@now/node" },
-    { "src": "favicon.ico", "use": "@now/static" }
+    { "src": "static/*", "use": "@now/static" }
   ],
   "alias": [
     "baseball-porch.now.sh",

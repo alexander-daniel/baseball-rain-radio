@@ -1,6 +1,6 @@
 const fs = require('fs');
 const formatter = require('string-template');
-const rawTemplate = fs.readFileSync(`${__dirname}/index.html`, 'utf8');
+const rawTemplate = fs.readFileSync(`${__dirname}/static/index.html`, 'utf8');
 
 // TODO: add more or organize better, but at least we're using permalinks!
 // https://archive.org/download/classicmlbbaseballradio
