@@ -10,7 +10,7 @@
     "start-dev": "micro-dev"
   },
   "name": "baseball-porch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "repository": "git@git.sr.ht:~alexanderdaniel/baseball-rain-radio",
   "author": "alex@cedarcedar.com",
